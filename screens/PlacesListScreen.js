@@ -30,7 +30,7 @@ const PlacesListScreen = (props) => {
               });
             }}
             title={itemData.item.title}
-            address={itemData.item.adress}
+            address={itemData.item.address}
             image={itemData.item.imageUri}
           />
         )}

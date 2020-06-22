@@ -9,7 +9,10 @@ const MapPreview = (props) => {
   }
 
   return (
-    <TouchableOpacity style={{ ...styles.mapPriview, ...props.style }}>
+    <TouchableOpacity
+      onPress={props.onPress}
+      style={{ ...styles.mapPriview, ...props.style }}
+    >
       {props.location ? (
         <Image style={styles.mapImage} source={{ uri: imagePreviewUrl }} />
       ) : (
